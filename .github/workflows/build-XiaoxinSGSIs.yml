@@ -28,18 +28,18 @@ jobs:
        
        - name: Get variables
          run: |
-           echo "::set-output name=rom_url:https://firmware.meizu.com/Firmware/Flyme/meizu17_Pro/8.2.0.0/cn/20201215185816/2ce1c704/update.zip"         
-           echo "::set-output name=rom_name:Flyme.zip"
-           echo "::set-output name=pack_sgsi:anlengsgsi.7z"
-           echo "::set-output name=make_miui:false,
-           echo "::set-output name=make_flyme:true,
-           echo "::set-output name=make_coloros:false,
-           echo "::set-output name=make_h2os:false,
-           echo "::set-output name=make_smartisanos:false,
-           echo "::set-output name=make_zui:false,
-           echo "::set-output name=make_super:false,
-           echo "::set-output name=upload_transfer:true,
-           echo "::set-output name=upload_artifact:false,
+           rom_url:https://firmware.meizu.com/Firmware/Flyme/meizu17_Pro/8.2.0.0/cn/20201215185816/2ce1c704/update.zip
+           rom_name:Flyme.zip
+           pack_sgsi:anlengsgsi.7z
+           make_miui:false
+           make_flyme:true
+           make_coloros:false
+           make_h2os:false
+           make_smartisanos:false
+           make_zui:false
+           make_super:false
+           upload_transfer:true
+           upload_artifact:false
          id: var
            
        - name: Download XiaoxinSGSIs Tools
